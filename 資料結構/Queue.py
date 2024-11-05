@@ -26,9 +26,10 @@ class Queue():
             return self.data[self.front]
     
     def printQueue(self):
-        for i  in range(self.front+1,self.back+1):
-            print(self.data[i],end=" ")
-        print() 
+        if not self.isEmpty:
+            for i  in range(self.front+1,self.back+1):
+                print(self.data[i],end=" ")
+            print() 
 
 def test():
     q=Queue(5)
