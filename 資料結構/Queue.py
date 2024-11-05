@@ -23,6 +23,7 @@ class Queue():
             print("佇列已空")
         else:
             self.front+=1
+            return self.data[self.front]
     
     def printQueue(self):
         for i  in range(self.front+1,self.back+1):
